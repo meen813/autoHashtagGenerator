@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createNewPost } from '@/service/awsService';
 
-export const runtime = 'edge';
-
 export async function POST(req: NextRequest) {
   try {
     const contentType = req.headers.get('content-type') || '';
