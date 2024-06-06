@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "aws-sdk": "^2.1635.0",
+    "buffer": "^6.0.3",
     "formidable": "^3.5.1",
-    "next": "14.2.3",
+    "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
