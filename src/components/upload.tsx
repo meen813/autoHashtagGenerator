@@ -122,12 +122,21 @@ export default function Upload() {
             </div>
           )}
         </label>
-        <Button text="Upload Your Photo" onClick={()=>{}} />
+        <Button text="Hashtag Your Photo" onClick={() => { }} />
       </form>
       {hashtags.length > 0 && (
         <div className="mt-5">
-          <h3>Generated Hashtags:</h3>
-          <p>{hashtags.join(' ')}</p>
+          <h3 className='text-xl font-bold mb-3'>Generated Hashtags:</h3>
+          <div>
+            {hashtags.map((tag, index) => (
+              <span
+                key={index}
+                className='bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded border border-blue-300 shadow-lg cursor-pointer hover:bg-blue-200 transition-colors duration-200'
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       )}
     </section>
