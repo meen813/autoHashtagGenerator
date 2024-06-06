@@ -80,7 +80,7 @@ export default function Upload() {
     <section className="w-full flex flex-col items-center mt-7">
       {loading && (
         <div>
-          <p>Now Loading...</p>
+          <p>Now Generating Your Hashtags</p>
         </div>
       )}
       {error && (
@@ -126,8 +126,8 @@ export default function Upload() {
       </form>
       {hashtags.length > 0 && (
         <div className="mt-5">
-          <h3 className='text-xl font-bold mb-3'>Generated Hashtags:</h3>
-          <div>
+          <h3 className='text-xl font-bold mb-3 ml-5'>Generated Hashtags:</h3>
+          <div className='flex flex-wrap gap-2 mt-5 border border-blue-300 p-4 rounded ml-5 mr-5'>
             {hashtags.map((tag, index) => (
               <span
                 key={index}
