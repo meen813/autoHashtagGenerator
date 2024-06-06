@@ -1,11 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createNewPost } from '@/service/awsService';
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+export const runtime = 'edge';
 
 export async function POST(req: NextRequest) {
   try {
