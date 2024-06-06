@@ -86,7 +86,7 @@ export default function Upload() {
       {error && (
         <p>{error}</p>
       )}
-      <form className="w-1/3 flex flex-col mt-3 gap-3" onSubmit={handleSubmit}>
+      <form className="w-full max-w-lg flex flex-col mt-3 gap-3" onSubmit={handleSubmit}>
         <input
           type="file"
           className="hidden"
@@ -105,7 +105,7 @@ export default function Upload() {
         >
           {dragging && <div className="absolute inset-0 bg-neutral-900/20 pointer-events-none" />}
           {!file && (
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center text-center">
               <FileIcons />
               <p className="mt-3">Upload Your Image</p>
             </div>
